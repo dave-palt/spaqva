@@ -1,0 +1,1467 @@
+<html>
+
+
+
+<head>
+
+  <title>Spaqva - Items Pricings</title>
+
+  <meta itemprop="name" content="Spaqva - item pricings" />
+
+  <meta name="description" content="Spaqva items pricings" />
+
+
+
+  <!-- for Twitter -->
+
+  <meta name="twitter:card" content="summary">
+
+  <meta name="twitter:url" content="https://www.spaqva.it/pages/items-pricings.html">
+
+  <meta name="twitter:title" content="Spaqva">
+
+  <meta name="twitter:description" content="Spaqva items pricings">
+
+  <link rel="stylesheet" href="/bulma.min.css">
+
+  <script>
+
+    (function (i, s, o, g, r, a, m) {
+
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+
+        (i[r].q = i[r].q || []).push(arguments)
+
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+
+
+    //ga('create', 'UA-44694509-1', 'spaqva.it');
+
+    //ga('send', 'pageview');
+
+    function openOverlay(element) {
+
+      var src = element.src.replace('-800.', '.')
+
+      document.getElementById('overlay').classList.add('open')
+
+      document.getElementById('overlay-image').src = src
+
+    }
+
+    function closeOverlay() {
+
+      var overlay = document.getElementById('overlay')
+
+      while (overlay.classList.contains('open')) {
+
+        overlay.classList.remove('open')
+
+      }
+
+      document.getElementById('overlay-image').src = null
+
+    }
+
+    window.onload = function () {
+
+      document.getElementById('overlay-image').onclick = function (event) {
+
+        event.stopPropagation()
+
+        return true
+
+      }
+
+    }
+
+  </script>
+
+  <script src="https://kit.fontawesome.com/2345759d2b.js" crossorigin="anonymous"></script>
+
+  <style>
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+
+
+    * {
+
+      box-sizing: border-box;
+
+      transition: all 200ms ease-in-out;
+
+    }
+
+
+
+    img:hover,
+
+    a:hover {
+
+      filter: brightness(1.05);
+
+    }
+
+
+
+    .has-cursor-pointer {
+
+      cursor: pointer !important;
+
+    }
+
+
+
+    .img-logo-sample {
+
+      max-height: 140px;
+
+    }
+
+
+
+    .sections {
+
+      display: flex;
+
+      flex-direction: column;
+
+    }
+
+
+
+    .section {
+
+      padding: 3rem 1.5rem;
+
+      display: flex;
+
+      flex-direction: column;
+
+      flex-wrap: wrap;
+
+      flex: 1 0 100%;
+
+    }
+
+
+
+    .navigation-section {
+
+      flex-direction: row;
+
+      justify-content: space-evenly;
+
+      align-items: center;
+
+      padding: 1rem;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+    }
+
+
+
+    .navigation-section .motto {
+
+      flex: 1 0 auto;
+
+    }
+
+
+
+    .section .logo {
+
+      max-height: 150px;
+
+      /* min-height: 100px; */
+
+      width: auto;
+
+      display: flex;
+
+      flex: 0 1 100%;
+
+    }
+
+
+
+    .logo-section {
+
+      justify-content: center;
+
+      align-items: center;
+
+      display: flex;
+
+      flex-direction: column;
+
+      padding: 3rem 1.5rem;
+
+    }
+
+
+
+    .logo-section .logo {
+
+      margin-bottom: 1.5rem;
+
+    }
+
+
+
+    .about-us-section {
+
+      display: flex;
+
+      flex-direction: column;
+
+      padding: 3rem 1.5rem;
+
+    }
+
+
+
+    .about-us-section .divider {
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+    }
+
+
+
+    .about-us-section img {
+
+      max-height: 500px;
+
+    }
+
+
+
+
+
+    .about-us-section .right-side {
+
+      padding: 0;
+
+    }
+
+
+
+    .gallery-section {
+
+      padding: 0;
+
+    }
+
+
+
+    .gallery-section>.image {
+
+      width: 100%;
+
+      max-height: 100%;
+
+    }
+
+
+
+    .gallery-section>.image.text {
+
+      padding: 3rem;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+    }
+
+
+
+    .gallery-section>.image.text:not(.has-text-left) {
+
+      align-items: center;
+
+    }
+
+
+
+    .gallery-section>.image.grows {
+
+      width: 100%;
+
+    }
+
+
+
+    .plant-image {
+
+      order: 2;
+
+      background-image: url('/images/20200504_IMG_8498_developed.jpg');
+
+      background-size: cover;
+
+      background-position: center;
+
+      position: relative;
+
+    }
+
+
+
+    .plant-image .image-placeholder {
+
+      visibility: hidden;
+
+    }
+
+
+
+    .plant-image .plant-label {
+
+      position: absolute;
+
+    }
+
+
+
+    .plant-image .plant-label.head {
+
+      top: 10px;
+
+      left: 50%;
+
+      transform: translateX(-50%);
+
+    }
+
+
+
+    .plant-image .plant-label.torac {
+
+      top: 30%;
+
+      right: 25%;
+
+    }
+
+
+
+    .special-thanks-links {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+    }
+
+
+
+    .special-thanks-links a+a {
+
+      margin-left: 40px;
+
+    }
+
+
+
+    .overlay {
+
+      position: fixed;
+
+      display: none;
+
+      top: 0;
+
+      right: 0;
+
+      bottom: 0;
+
+      left: 0;
+
+      background-color: rgba(0, 0, 0, 0.675);
+
+      z-index: 10000;
+
+    }
+
+
+
+
+
+    .overlay .overlay-close {
+
+      position: absolute;
+
+      top: 16px;
+
+      right: 16px;
+
+    }
+
+
+
+    .overlay .image {
+
+      max-width: 80vw;
+
+      max-height: 80vh;
+
+      transform: translateY(-50%);
+
+      top: 50%;
+
+      cursor: default !important;
+
+    }
+
+
+
+
+
+    /* .iwt-container .image+.text {
+
+      padding-right: 5rem;
+
+    }
+
+
+
+    .iwt-container .text:first-child {
+
+      padding-left: 5rem;
+
+    } */
+
+    @media only screen and (min-width: 769px) {
+
+      .about-us-section>.divider .image {
+
+        padding: 2rem 0;
+
+      }
+
+
+
+      .about-us-section>.right-side {
+
+        width: 100%;
+
+      }
+
+
+
+      .gallery-section {
+
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+      }
+
+
+
+      .gallery-section>.image {
+
+        width: 50%;
+
+        max-height: 100%;
+
+      }
+
+
+
+      .overlay.open {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-content: center;
+
+      }
+
+    }
+
+
+
+    @media only screen and (min-width: 1240px) {
+
+      .sections {
+
+        flex-direction: row;
+
+      }
+
+
+
+      .logo-section {
+
+        display: flex;
+
+        flex: 0 0 50%;
+
+        width: 50%;
+
+      }
+
+
+
+      .plant-image {
+
+        order: 0;
+
+      }
+
+
+
+      .about-us-section {
+
+        display: flex;
+
+        flex-direction: row;
+
+        flex: 0 0 50%;
+
+        width: 50%;
+
+      }
+
+
+
+      .about-us-section>.divider {
+
+        display: flex;
+
+        flex-direction: row;
+
+      }
+
+
+
+      .about-us-section>.left-side {
+
+        max-width: 33%;
+
+      }
+
+
+
+      .about-us-section>.right-side {
+
+        padding-left: 1.5rem;
+
+        max-width: 66%;
+
+      }
+
+
+
+      .gallery-section {
+
+        flex-direction: row;
+
+      }
+
+
+
+      .gallery-section>.image {
+
+        width: 25%;
+
+        max-height: 100%;
+
+      }
+
+
+
+
+
+      .gallery-section>.image.grows {
+
+        width: 50%;
+
+      }
+
+    }
+
+
+
+    @media only screen and (min-width: 1216px) {
+
+
+
+      .sections {
+
+        flex-direction: row;
+
+      }
+
+
+
+      .logo-section {
+
+        display: flex;
+
+        flex: 0 0 33%;
+
+        width: 33%;
+
+      }
+
+
+
+      .about-us-section {
+
+        display: flex;
+
+        flex: 1 0 66%;
+
+        width: 66%;
+
+      }
+
+    }
+
+
+
+    .navbar+* {
+
+      margin-top: 3rem;
+
+    }
+
+  </style>
+
+</head>
+
+
+
+<body>
+
+  <div class="navigation-section section has-background-dark has-text-white-ter">
+
+    <a class="logo-link has-text-centered has-text-white-ter" href="/index.html">
+
+      <p class="is-size-6 has-text-centered ">
+
+      </p>
+
+    </a>
+
+    <a class="logo-link has-text-centered has-text-white-ter" href="/index.html">
+
+      <img src="/logo.png" style="filter: invert();">
+
+      <p class="is-size-6 has-text-centered ">
+
+        The Power of Reflexology is invisible.
+
+      </p>
+      
+      <p class="is-size-3 has-text-centered">
+        Retail prices.
+      </p>
+
+    </a>
+
+    <a class="logo-link has-text-centered has-text-white-ter" href="/index.html">
+
+      <p class="is-size-6 has-text-centered ">
+
+
+
+      </p>
+
+    </a>
+
+  </div>
+
+  <div id="overlay" class="overlay has-text-white-ter has-cursor-pointer" onclick="closeOverlay()">
+
+    <i class="overlay-close fas fa-times" onclick="closeOverlay()"></i>
+
+    <img loading="lazy" decoding="async" id="overlay-image" class="image">
+
+  </div>
+
+  <!-- <img class="image is-fullwidth" src="/images/20200504_IMG_8471_developed.webp"> -->
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05202-YATE-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          YATE
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 1500,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">NATURAL VACCHETTA LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">INSIDE LEATHER POCKET</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">BACK STRAP IN NYLON</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">HANDLE CAN BE MODIFIED IN BASE OF CUSTOMER REQUEST.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05203-TUMAY-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          TUMAY
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 150,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">NATURAL VACCHETTA LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">HANDLE STRAP REMOVABLE</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05204-ANGA-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          ANGA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 30,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">BUSINESS CARD</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">NATURAL VACCHETTA LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">LOGO EMBOSSED</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05211-LEKA-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          LEKA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 150,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZE 37-41</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFLEXOLOGY PAT.</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE RUBBERY</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05210-KALE-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          KALE
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 150,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZE 37-41</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFLEXOLOGY PAT.</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE RUBBERY</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05209-RUHA-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          RUHA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 160,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZE 41-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFLEXOLOGY PAT.</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE RUBBERY</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05202-YATE-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          RUAVA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 160,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZE 41-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFLEXOLOGY PAT.</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE RUBBERY</p>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+
+  <!-- <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200417-DSC05567-SUVA-800.webp"
+
+        onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          SUVA LUX
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 75,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES 37-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER FABRIC</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFEXOLOGY PAT</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">BAG PERSONALIZED AS UPPER</p>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05206-FANIA-LUX-800.webp"
+
+        onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          FANIA LUX
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 110,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES 37-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER VACCHETTA</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFEXOLOGY PAT</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">BAG PERSONALIZED AS UPPER</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05207-CCROSS-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          CCROSS
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 75,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES 37-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER FABRIC</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFEXOLOGY PAT</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">BAG PERSONALIZED AS UPPER</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200417-DSC05569-APIA-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          APIA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          PRICE IN BASE OF QUANTITIES
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          ALSO CUSTOM MADE
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES S-M-L PERSONALIZE IN BASE OF CUSTOMER REQUEST</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER NYLON</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK RUBBERY EMBOSSED</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05202-YATE-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          FANIA LUX
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          &euro; 110,00
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES 37-45</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER LEATHER VACCHETTA</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK LEATHER REFLEXOLOGY PAT.</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+
+
+
+  <!-- <div class="sections">
+
+    <div class="gallery-section section">
+
+      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05202-YATE-800.webp" onclick="openOverlay(this)">
+
+      <div class="image text has-text-info">
+
+        <p class="is-size-4 has-text-centered">
+
+          APIA
+
+        </p>
+
+        <p class="is-size-4 has-text-centered">
+
+          PRICE IN BASE OF QUANTITIES
+
+        </p>
+
+      </div>
+
+      <div class="image text grows has-background-info has-text-white-ter">
+
+        <p class="is-size-5 has-text-centered">MENS-LADIES UPPER AND BAG MATCHING FOR</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SIZES S-M-L PERSONALIZED IN BASE OF CUSTOMER</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">UPPER NYLON REQUEST</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOCK RUBBERY EMBOSSED</p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5 has-text-centered">SOLE MICRO</p>
+
+      </div>
+
+    </div>
+
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+
+  <div class="sections">
+
+    <div class="gallery-section section">
+
+      <a class="image text has-text-centered has-background-dark has-text-white-ter" href="mailto: info@spaqva.it"
+
+        target="_blank">
+
+        <p class="is-size-1"><i class="fas fa-at"></i></p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5">Contact us</p>
+
+      </a>
+
+      <a class="image text has-text-centered has-background-dark has-text-white-ter"
+
+        href="https://www.instagram.com/spaqva" target="_blank">
+
+        <p class="is-size-1"><i class="fab fa-instagram"></i></p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5">Instagram</p>
+
+      </a>
+
+      <a class="image text has-text-centered has-background-dark has-text-white-ter"
+
+        href="https://www.pinterest.com/spaqva" target="_blank">
+
+        <p class="is-size-1"><i class="fab fa-pinterest"></i></p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5">Pinterest</p>
+
+      </a>
+
+      <a class="image text has-text-centered has-background-dark has-text-white-ter"
+
+        href="https://www.twitter.com/InfoSpaqva" target="_blank">
+
+        <p class="is-size-1"><i class="fab fa-twitter"></i></p>
+
+        <p>&nbsp;</p>
+
+        <p class="is-size-5">Twitter</p>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+</body>
+
+
+
+</html>

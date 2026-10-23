@@ -1,0 +1,55 @@
+# spaqva.it — GitHub Pages publish set (explicit whitelist)
+# Everything else on disk is the local safety copy of the Aruba hosting
+# and is intentionally NOT published. Nothing is deleted; just not shipped.
+
+# ignore everything by default
+/*
+
+# pages
+!/.gitignore
+!/CNAME
+!/index.html
+!/404.html
+!/pages/
+/pages/*
+!/pages/items-pricings.html
+
+# styles
+!/bulma.min.css
+
+# root images (referenced)
+!/logo.png
+!/Logo_sample.png
+!/helvetia.png
+!/hotelsolemar.png
+!/abstract_edit.webp
+!/footprint_edit.webp
+!/spaqva_body_edit.webp
+
+# gallery — only the optimized WebP variants actually referenced
+!/images/
+/images/*
+!/images/20200223-DSC05202-YATE-800.webp
+!/images/20200223-DSC05203-TUMAY-800.webp
+!/images/20200223-DSC05204-ANGA-800.webp
+!/images/20200223-DSC05206-FANIA-LUX-800.webp
+!/images/20200223-DSC05207-CCROSS-800.webp
+!/images/20200223-DSC05209-RUHA-800.webp
+!/images/20200223-DSC05210-KALE-800.webp
+!/images/20200223-DSC05211-LEKA-800.webp
+!/images/20200417-DSC05567-SUVA-800.webp
+!/images/20200417-DSC05569-APIA-800.webp
+!/images/20200504_IMG_8471_developed.webp
+!/images/20200504_IMG_8498_developed_edit_square.webp
+!/images/20200504_IMG_8538_developed.webp
+!/images/20200504_IMG_8542_developed.webp
+!/images/20200504_IMG_8543_developed.webp
+!/images/20200504_IMG_8594_developed.webp
+!/images/20200504_IMG_8654_developed.webp
+!/images/20200707-IMG_0157-Edit.webp
+!/images/20200720-DSCF6425.webp
+!/images/20200720-DSCF6441.webp
+!/images/foto1.webp
+!/images/foto2.webp
+!/images/foto3.webp
+!/images/foto_1.webp

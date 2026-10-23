@@ -1,0 +1,636 @@
+<html>
+
+
+
+<head>
+
+    <title>Spaqva - La scarpa che massaggia</title>
+
+    <meta itemprop="name" content="Spaqva" />
+
+    <meta name="description" content="Spaqva Catalog" />
+
+
+
+    <!-- for Twitter -->
+
+    <meta name="twitter:card" content="summary">
+
+    <meta name="twitter:url" content="https://www.spaqva.it/index.html">
+
+    <meta name="twitter:title" content="Spaqva">
+
+    <meta name="twitter:description" content="Spaqva Catalog">
+
+    <link rel="stylesheet" as="style" href="/bulma.min.css" onload="this.rel='stylesheet'">
+
+    <script>
+        (function(i, s, o, g, r, a, m) {
+
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+
+                (i[r].q = i[r].q || []).push(arguments)
+
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+
+
+        ga('create', 'UA-44694509-1', 'spaqva.it');
+
+        ga('send', 'pageview');
+    </script>
+
+    <script src="https://kit.fontawesome.com/2345759d2b.js" crossorigin="anonymous" async></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            box-sizing: border-box;
+            transition: all 200ms ease-in-out;
+        }
+        
+        img:hover,
+        a:hover {
+            filter: brightness(1.05);
+        }
+        
+        .img-logo-sample {
+            max-height: 140px;
+        }
+        
+        .sections {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .section {
+            padding: 3rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex: 1 0 100%;
+        }
+        
+        .navigation-section {
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .navigation-section .motto {
+            flex: 1 0 auto;
+        }
+        
+        .section .logo {
+            max-height: 150px;
+            /* min-height: 100px; */
+            width: auto;
+            display: flex;
+            flex: 0 1 100%;
+        }
+        
+        .logo-section {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 1.5rem;
+        }
+        
+        .logo-section .logo {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about-us-section {
+            display: flex;
+            flex-direction: column;
+            padding: 3rem 1.5rem;
+        }
+        
+        .about-us-section .divider {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .about-us-section img {
+            max-height: 500px;
+        }
+        
+        .about-us-section .right-side {
+            padding: 0;
+        }
+        
+        .gallery-section {
+            padding: 0;
+        }
+        
+        .gallery-section>.image {
+            width: 100%;
+            max-height: 100%;
+        }
+        
+        .gallery-section>.image.text {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .gallery-section>.image.text:not(.has-text-left) {
+            align-items: center;
+        }
+        
+        .gallery-section>.image.grows {
+            width: 100%;
+        }
+        
+        .plant-image {
+            order: 2;
+            background-image: url('/images/20200504_IMG_8498_developed.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .plant-image .image-placeholder {
+            visibility: hidden;
+        }
+        
+        .plant-image .plant-label {
+            position: absolute;
+        }
+        
+        .plant-image .plant-label.head {
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .plant-image .plant-label.torac {
+            top: 30%;
+            right: 25%;
+        }
+        
+        .special-thanks-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .special-thanks-links a+a {
+            margin-left: 40px;
+        }
+        /* .iwt-container .image+.text {
+        
+              padding-right: 5rem;
+        
+            }
+        
+        
+        
+            .iwt-container .text:first-child {
+        
+              padding-left: 5rem;
+        
+            } */
+        
+        @media only screen and (min-width: 769px) {
+            .about-us-section>.divider .image {
+                padding: 2rem 0;
+            }
+            .about-us-section>.right-side {
+                width: 100%;
+            }
+            .gallery-section {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            .gallery-section>.image {
+                width: 50%;
+                max-height: 100%;
+            }
+        }
+        
+        @media only screen and (min-width: 1240px) {
+            .sections {
+                flex-direction: row;
+            }
+            .logo-section {
+                display: flex;
+                flex: 0 0 50%;
+                width: 50%;
+            }
+            .plant-image {
+                order: 0;
+            }
+            .about-us-section {
+                display: flex;
+                flex-direction: row;
+                flex: 0 0 50%;
+                width: 50%;
+            }
+            .about-us-section>.divider {
+                display: flex;
+                flex-direction: row;
+            }
+            .about-us-section>.left-side {
+                max-width: 33%;
+            }
+            .about-us-section>.right-side {
+                padding-left: 1.5rem;
+                max-width: 66%;
+            }
+            .gallery-section {
+                flex-direction: row;
+            }
+            .gallery-section>.image {
+                width: 25%;
+                max-height: 100%;
+            }
+            .gallery-section>.image.grows {
+                width: 50%;
+            }
+        }
+        
+        @media only screen and (min-width: 1216px) {
+            .sections {
+                flex-direction: row;
+            }
+            .logo-section {
+                display: flex;
+                flex: 0 0 33%;
+                width: 33%;
+            }
+            .about-us-section {
+                display: flex;
+                flex: 1 0 66%;
+                width: 66%;
+            }
+        }
+        
+        .navbar+* {
+            margin-top: 3rem;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="navigation-section section has-background-dark has-text-white-ter">
+
+        <a class="logo-link has-text-centered has-text-white-ter" href="/index.html">
+
+            <p class="is-size-6 has-text-centered ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </p>
+
+        </a>
+
+        <a class="logo-link has-text-centered has-text-white-ter" href="/index.html">
+
+            <img src="/logo.png" style="filter: invert();">
+
+            <p class="is-size-6 has-text-centered ">
+
+                The Power of Reflexology is invisible.
+
+            </p>
+
+        </a>
+
+        <a class="logo-link has-text-centered has-text-white-ter" href="/pages/items-pricings.html">
+
+            <p class="is-size-6 has-text-centered ">
+
+                Items Prices
+
+            </p>
+
+        </a>
+
+    </div>
+
+    <img class="image is-fullwidth" src="/images/20200504_IMG_8471_developed.webp">
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image plant-image" src="/images/20200504_IMG_8498_developed_edit_square.webp">
+
+            <div class="image text grows has-background-info has-text-white-ter">
+
+                <p class="is-size-3 has-text-left-desktop">About Us...</p>
+
+                <p class="is-size-5 has-text-centered">35 years experience, items, patent.</p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5 has-text-centered">The evolution component of spaqva tech, create our patent for consumer health.
+
+                </p>
+
+                <p class="is-size-5 has-text-centered"><img src="/logo.png" style="filter: invert();"></p>
+
+            </div>
+
+            <div class="image text has-text-info">
+
+                <img loading="lazy" decoding="async" class="logo" src="/Logo_sample.png">
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">
+
+                    <span class="is-italic">SPA</span>: Salus per acquam.
+
+                </p>
+
+                <p class="is-size-5">
+
+                    <span class="is-italic">Acqua-Acque</span>: Life, Energy.
+
+                </p>
+
+                <p class="is-size-4 is-italic has-text-centered">
+
+                    SPAQVA
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/foto1.webp">
+
+
+            <div class="image text has-text-info">
+
+                <p class="is-size-5">Fashion, comfort, light &amp; Flexible</p>
+
+            </div>
+            
+            <img loading="lazy" decoding="async" class="image" src="/images/foto2.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/foto3.webp">
+
+
+        </div>
+
+    </div>
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/foto_1.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200707-IMG_0157-Edit.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200720-DSCF6425.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200720-DSCF6441.webp">
+
+        </div>
+
+    </div>
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200504_IMG_8538_developed.webp">
+
+            <div class="image text has-text-centered has-background-danger has-text-white-ter">
+
+                <p class="is-size-1"><i class="fas fa-pencil-ruler"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Also available custom made</p>
+
+            </div>
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200504_IMG_8542_developed.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200504_IMG_8543_developed.webp">
+
+        </div>
+
+    </div>
+
+    <!-- <div class="sections">
+        
+            <div class="gallery-section section">
+        
+              <img loading="lazy" decoding="async" class="image" src="abstract_edit.webp">
+        
+            </div>
+        
+          </div> -->
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200504_IMG_8594_developed.webp">
+
+            <div class="image text has-text-centered has-background-dark has-text-white-ter">
+
+                <!-- <img loading="lazy" decoding="async" class="logo" src="helvetia.png"> -->
+
+                <p class="is-size-1">
+
+                    <i class="fas fa-hotel"></i>
+
+                    <i class="fas fa-spa"></i>
+
+                    <i class="fas fa-hot-tub"></i>
+
+                </p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">For hotel suits and spas</p>
+
+            </div>
+
+            <img loading="lazy" decoding="async" class="image" src="/images/20200504_IMG_8654_developed.webp">
+
+            <div class="image text has-text-centered has-background-dark has-text-white-ter">
+
+                <p class="is-size-1"><i class="fas fa-hands"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Reflexology treatment</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <img loading="lazy" decoding="async" class="image text" src="/spaqva_body_edit.webp">
+
+            <img loading="lazy" decoding="async" class="image" src="/footprint_edit.webp">
+
+            <div class="image text has-text-centered has-text-info">
+
+                <p class="is-size-1"><i class="far fa-image"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Our fashion scientific image</p>
+
+            </div>
+
+            <img loading="lazy" decoding="async" class="image" src="/abstract_edit.webp">
+
+        </div>
+
+    </div>
+
+    <div class="sections">
+
+        <div class="gallery-section section ">
+
+            <div class="image text has-text-centered has-background-info has-text-white-ter">
+
+                <p class="is-size-6">Special thanks to</p>
+
+                <p>&nbsp;</p>
+
+                <a class="has-text-centered" href="https://www.helvetiabenessere.it/" target="_blank">
+
+                    <img loading="lazy" decoding="async" class="image logo" src="/helvetia.png">
+
+                </a>
+
+            </div>
+
+            <div class="image text has-text-centered has-background-info has-text-white-ter">
+
+                <p class="is-size-6">Special thanks to</p>
+
+                <p>&nbsp;</p>
+
+                <a class="has-text-centered has-text-white-ter is-size-5" href="https://www.hotelsolemar.it/  " target="_blank">
+
+                    <img loading="lazy" decoding="async" class="image logo" src="/hotelsolemar.png"> Hotel Solemar
+
+                </a>
+
+            </div>
+
+            <div class="image text has-text-left has-background-info has-text-white-ter">
+
+                <p class="is-size-6">Photo by:</p>
+
+                <p class="is-size-4">Giuseppe Farulli</p>
+
+            </div>
+
+            <div class="image text has-background-info has-text-white-ter">
+
+                <p class="is-size-6 has-text-centered">Web Design by:</p>
+
+                <a class="has-text-white-ter is-size-4" href="https://www.instagram.com/davidepalchetti" target="_blank">
+
+                    <p><i class="fab fa-instagram">&nbsp;</i>davidepalchetti</p>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <div class="sections">
+
+        <div class="gallery-section section">
+
+            <a class="image text has-text-centered has-background-dark has-text-white-ter" href="mailto: info@spaqva.it" target="_blank">
+
+                <p class="is-size-1"><i class="fas fa-at"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Contact us</p>
+
+            </a>
+
+            <a class="image text has-text-centered has-background-dark has-text-white-ter" href="https://www.instagram.com/spaqva" target="_blank">
+
+                <p class="is-size-1"><i class="fab fa-instagram"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Instagram</p>
+
+            </a>
+
+            <a class="image text has-text-centered has-background-dark has-text-white-ter" href="https://www.pinterest.com/spaqva" target="_blank">
+
+                <p class="is-size-1"><i class="fab fa-pinterest"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Pinterest</p>
+
+            </a>
+
+            <a class="image text has-text-centered has-background-dark has-text-white-ter" href="https://www.twitter.com/InfoSpaqva" target="_blank">
+
+                <p class="is-size-1"><i class="fab fa-twitter"></i></p>
+
+                <p>&nbsp;</p>
+
+                <p class="is-size-5">Twitter</p>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>
