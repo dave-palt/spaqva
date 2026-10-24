@@ -21,6 +21,11 @@
 !/spaqva.css
 !/favicon.png
 
+# crawler + LLM files
+!/robots.txt
+!/sitemap.xml
+!/llms.txt
+
 # root images (referenced)
 !/logo.png
 !/Logo_sample.png
