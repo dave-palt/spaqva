@@ -17,6 +17,13 @@
 # styles
 !/bulma.min.css
 
+# vendored FontAwesome 5.15.4 free kit (replaces https://kit.fontawesome.com/2345759d2b.js)
+!/fontawesome/
+!/fontawesome/css/
+!/fontawesome/css/*.css
+!/fontawesome/webfonts/
+!/fontawesome/webfonts/*
+
 # root images (referenced)
 !/logo.png
 !/Logo_sample.png
