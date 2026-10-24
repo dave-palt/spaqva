@@ -1,712 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 
 
 <head>
-
-  <title>Spaqva - Items Pricings</title>
-
-  <meta itemprop="name" content="Spaqva - item pricings" />
-
-  <meta name="description" content="Spaqva items pricings" />
-
-
-
-  <!-- for Twitter -->
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spaqva — Items &amp; retail prices</title>
+  <meta name="description" content="Spaqva items and retail prices — handmade reflexology massage footwear and leather accessories.">
   <meta name="twitter:card" content="summary">
-
   <meta name="twitter:url" content="https://www.spaqva.it/pages/items-pricings.html">
-
-  <meta name="twitter:title" content="Spaqva">
-
-  <meta name="twitter:description" content="Spaqva items pricings">
-
+  <meta name="twitter:title" content="Spaqva — Items and retail prices">
+  <meta name="twitter:description" content="Spaqva items and retail prices">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <link rel="stylesheet" href="/bulma.min.css">
-
-  <script>
-
-    (function (i, s, o, g, r, a, m) {
-
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-
-        (i[r].q = i[r].q || []).push(arguments)
-
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-
-
-    //ga('create', 'UA-44694509-1', 'spaqva.it');
-
-    //ga('send', 'pageview');
-
-    function openOverlay(element) {
-
-      var src = element.src.replace('-800.', '.')
-
-      document.getElementById('overlay').classList.add('open')
-
-      document.getElementById('overlay-image').src = src
-
-    }
-
-    function closeOverlay() {
-
-      var overlay = document.getElementById('overlay')
-
-      while (overlay.classList.contains('open')) {
-
-        overlay.classList.remove('open')
-
-      }
-
-      document.getElementById('overlay-image').src = null
-
-    }
-
-    window.onload = function () {
-
-      document.getElementById('overlay-image').onclick = function (event) {
-
-        event.stopPropagation()
-
-        return true
-
-      }
-
-    }
-
-  </script>
-
-  <link rel="stylesheet" href="/fontawesome/css/free-v4-font-face.min.css">
-  <link rel="stylesheet" href="/fontawesome/css/free-v4-shims.min.css">
-  <link rel="stylesheet" href="/fontawesome/css/free.min.css">
-
-  <style>
-
-    html {
-
-      scroll-behavior: smooth;
-
-    }
-
-
-
-    * {
-
-      box-sizing: border-box;
-
-      transition: all 200ms ease-in-out;
-
-    }
-
-
-
-    img:hover,
-
-    a:hover {
-
-      filter: brightness(1.05);
-
-    }
-
-
-
-    .has-cursor-pointer {
-
-      cursor: pointer !important;
-
-    }
-
-
-
-    .img-logo-sample {
-
-      max-height: 140px;
-
-    }
-
-
-
-    .sections {
-
-      display: flex;
-
-      flex-direction: column;
-
-    }
-
-
-
-    .section {
-
-      padding: 3rem 1.5rem;
-
-      display: flex;
-
-      flex-direction: column;
-
-      flex-wrap: wrap;
-
-      flex: 1 0 100%;
-
-    }
-
-
-
-    .navigation-section {
-
-      flex-direction: row;
-
-      justify-content: space-evenly;
-
-      align-items: center;
-
-      padding: 1rem;
-
-      position: sticky;
-
-      top: 0;
-
-      z-index: 1000;
-
-    }
-
-
-
-    .navigation-section .motto {
-
-      flex: 1 0 auto;
-
-    }
-
-
-
-    .section .logo {
-
-      max-height: 150px;
-
-      /* min-height: 100px; */
-
-      width: auto;
-
-      display: flex;
-
-      flex: 0 1 100%;
-
-    }
-
-
-
-    .logo-section {
-
-      justify-content: center;
-
-      align-items: center;
-
-      display: flex;
-
-      flex-direction: column;
-
-      padding: 3rem 1.5rem;
-
-    }
-
-
-
-    .logo-section .logo {
-
-      margin-bottom: 1.5rem;
-
-    }
-
-
-
-    .about-us-section {
-
-      display: flex;
-
-      flex-direction: column;
-
-      padding: 3rem 1.5rem;
-
-    }
-
-
-
-    .about-us-section .divider {
-
-      display: flex;
-
-      flex-direction: column;
-
-      align-items: center;
-
-    }
-
-
-
-    .about-us-section img {
-
-      max-height: 500px;
-
-    }
-
-
-
-
-
-    .about-us-section .right-side {
-
-      padding: 0;
-
-    }
-
-
-
-    .gallery-section {
-
-      padding: 0;
-
-    }
-
-
-
-    .gallery-section>.image {
-
-      width: 100%;
-
-      max-height: 100%;
-
-    }
-
-
-
-    .gallery-section>.image.text {
-
-      padding: 3rem;
-
-      display: flex;
-
-      flex-direction: column;
-
-      justify-content: center;
-
-    }
-
-
-
-    .gallery-section>.image.text:not(.has-text-left) {
-
-      align-items: center;
-
-    }
-
-
-
-    .gallery-section>.image.grows {
-
-      width: 100%;
-
-    }
-
-
-
-    .plant-image {
-
-      order: 2;
-
-      background-image: url('/images/20200504_IMG_8498_developed.jpg');
-
-      background-size: cover;
-
-      background-position: center;
-
-      position: relative;
-
-    }
-
-
-
-    .plant-image .image-placeholder {
-
-      visibility: hidden;
-
-    }
-
-
-
-    .plant-image .plant-label {
-
-      position: absolute;
-
-    }
-
-
-
-    .plant-image .plant-label.head {
-
-      top: 10px;
-
-      left: 50%;
-
-      transform: translateX(-50%);
-
-    }
-
-
-
-    .plant-image .plant-label.torac {
-
-      top: 30%;
-
-      right: 25%;
-
-    }
-
-
-
-    .special-thanks-links {
-
-      display: flex;
-
-      justify-content: center;
-
-      align-items: center;
-
-    }
-
-
-
-    .special-thanks-links a+a {
-
-      margin-left: 40px;
-
-    }
-
-
-
-    .overlay {
-
-      position: fixed;
-
-      display: none;
-
-      top: 0;
-
-      right: 0;
-
-      bottom: 0;
-
-      left: 0;
-
-      background-color: rgba(0, 0, 0, 0.675);
-
-      z-index: 10000;
-
-    }
-
-
-
-
-
-    .overlay .overlay-close {
-
-      position: absolute;
-
-      top: 16px;
-
-      right: 16px;
-
-    }
-
-
-
-    .overlay .image {
-
-      max-width: 80vw;
-
-      max-height: 80vh;
-
-      transform: translateY(-50%);
-
-      top: 50%;
-
-      cursor: default !important;
-
-    }
-
-
-
-
-
-    /* .iwt-container .image+.text {
-
-      padding-right: 5rem;
-
-    }
-
-
-
-    .iwt-container .text:first-child {
-
-      padding-left: 5rem;
-
-    } */
-
-    @media only screen and (min-width: 769px) {
-
-      .about-us-section>.divider .image {
-
-        padding: 2rem 0;
-
-      }
-
-
-
-      .about-us-section>.right-side {
-
-        width: 100%;
-
-      }
-
-
-
-      .gallery-section {
-
-        flex-direction: row;
-
-        justify-content: space-evenly;
-
-      }
-
-
-
-      .gallery-section>.image {
-
-        width: 50%;
-
-        max-height: 100%;
-
-      }
-
-
-
-      .overlay.open {
-
-        display: flex;
-
-        justify-content: center;
-
-        align-content: center;
-
-      }
-
-    }
-
-
-
-    @media only screen and (min-width: 1240px) {
-
-      .sections {
-
-        flex-direction: row;
-
-      }
-
-
-
-      .logo-section {
-
-        display: flex;
-
-        flex: 0 0 50%;
-
-        width: 50%;
-
-      }
-
-
-
-      .plant-image {
-
-        order: 0;
-
-      }
-
-
-
-      .about-us-section {
-
-        display: flex;
-
-        flex-direction: row;
-
-        flex: 0 0 50%;
-
-        width: 50%;
-
-      }
-
-
-
-      .about-us-section>.divider {
-
-        display: flex;
-
-        flex-direction: row;
-
-      }
-
-
-
-      .about-us-section>.left-side {
-
-        max-width: 33%;
-
-      }
-
-
-
-      .about-us-section>.right-side {
-
-        padding-left: 1.5rem;
-
-        max-width: 66%;
-
-      }
-
-
-
-      .gallery-section {
-
-        flex-direction: row;
-
-      }
-
-
-
-      .gallery-section>.image {
-
-        width: 25%;
-
-        max-height: 100%;
-
-      }
-
-
-
-
-
-      .gallery-section>.image.grows {
-
-        width: 50%;
-
-      }
-
-    }
-
-
-
-    @media only screen and (min-width: 1216px) {
-
-
-
-      .sections {
-
-        flex-direction: row;
-
-      }
-
-
-
-      .logo-section {
-
-        display: flex;
-
-        flex: 0 0 33%;
-
-        width: 33%;
-
-      }
-
-
-
-      .about-us-section {
-
-        display: flex;
-
-        flex: 1 0 66%;
-
-        width: 66%;
-
-      }
-
-    }
-
-
-
-    .navbar+* {
-
-      margin-top: 3rem;
-
-    }
-
-  </style>
-
+  <link rel="stylesheet" href="/spaqva.css">
+  <!-- Icons: Font Awesome Free 5.15.4 — CC BY 4.0 (https://fontawesome.com/license/free) -->
 </head>
 
 
 
 <body>
 
-  <div class="navigation-section section has-background-dark has-text-white-ter">
+  <header class="navigation-section section has-background-dark has-text-white-ter">
 
     <a class="logo-link has-text-centered has-text-white-ter" href="/">
-
-      <p class="is-size-6 has-text-centered ">
-
-      </p>
-
+      <img src="/logo.png" alt="Spaqva" width="200" height="65" style="filter: invert();">
+      <p class="is-size-6 has-text-centered">The Power of Reflexology is invisible.</p>
     </a>
 
-    <a class="logo-link has-text-centered has-text-white-ter" href="/">
+    <h1 class="is-size-3 has-text-centered">Retail prices.</h1>
 
-      <img src="/logo.png" style="filter: invert();">
+  </header>
 
-      <p class="is-size-6 has-text-centered ">
+  <div id="overlay" class="overlay has-text-white-ter" onclick="closeOverlay()" role="dialog" aria-modal="true" aria-label="Enlarged product image">
 
-        The Power of Reflexology is invisible.
+    <button type="button" id="overlay-close" class="overlay-close" onclick="closeOverlay()" aria-label="Close"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 352 512"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg></button>
 
-      </p>
-      
-      <p class="is-size-3 has-text-centered">
-        Retail prices.
-      </p>
-
-    </a>
-
-    <a class="logo-link has-text-centered has-text-white-ter" href="/">
-
-      <p class="is-size-6 has-text-centered ">
-
-
-
-      </p>
-
-    </a>
-
-  </div>
-
-  <div id="overlay" class="overlay has-text-white-ter has-cursor-pointer" onclick="closeOverlay()">
-
-    <i class="overlay-close fas fa-times" onclick="closeOverlay()"></i>
-
-    <img loading="lazy" decoding="async" id="overlay-image" class="image">
+    <img id="overlay-image" class="image" alt="" decoding="async" onclick="event.stopPropagation()">
 
   </div>
 
@@ -720,15 +52,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05202-YATE-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge YATE image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05202-YATE-800.webp" alt="Spaqva YATE tan leather backpack" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          YATE
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">YATE</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -772,15 +102,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05203-TUMAY-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge TUMAY image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05203-TUMAY-800.webp" alt="Spaqva TUMAY tan leather pouch with wrist strap" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          TUMAY
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">TUMAY</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -816,15 +144,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05204-ANGA-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge ANGA image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05204-ANGA-800.webp" alt="Spaqva ANGA tan leather card holder" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          ANGA
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">ANGA</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -864,15 +190,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05211-LEKA-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge LEKA image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05211-LEKA-800.webp" alt="Spaqva LEKA black leather lace-up shoe" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          LEKA
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">LEKA</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -916,15 +240,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05210-KALE-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge KALE image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05210-KALE-800.webp" alt="Spaqva KALE ladies leather lace-up shoe" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          KALE
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">KALE</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -968,15 +290,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05209-RUHA-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge RUHA image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05209-RUHA-800.webp" alt="Spaqva RUHA men's black leather lace-up shoe" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          RUHA
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">RUHA</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -1126,17 +446,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05206-FANIA-LUX-800.webp"
-
-        onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge FANIA LUX image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05206-FANIA-LUX-800.webp" alt="Spaqva FANIA LUX tan leather massage slide sandal" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          FANIA LUX
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">FANIA LUX</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -1184,15 +500,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200223-DSC05207-CCROSS-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge CCROSS image">
+        <img loading="lazy" decoding="async" src="/images/20200223-DSC05207-CCROSS-800.webp" alt="Spaqva CCROSS fabric massage slide sandal" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          CCROSS
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">CCROSS</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -1240,15 +554,13 @@
 
     <div class="gallery-section section">
 
-      <img loading="lazy" decoding="async" class="image has-cursor-pointer" src="/images/20200417-DSC05569-APIA-800.webp" onclick="openOverlay(this)">
+      <button type="button" class="image has-cursor-pointer" onclick="openOverlay(this)" aria-label="Enlarge APIA image">
+        <img loading="lazy" decoding="async" src="/images/20200417-DSC05569-APIA-800.webp" alt="Spaqva APIA white slide slipper with tan massage footbed" width="800" height="800">
+      </button>
 
       <div class="image text has-text-info">
 
-        <p class="is-size-4 has-text-centered">
-
-          APIA
-
-        </p>
+        <h2 class="is-size-4 has-text-centered">APIA</h2>
 
         <p class="is-size-4 has-text-centered">
 
@@ -1408,11 +720,9 @@
 
     <div class="gallery-section section">
 
-      <a class="image text has-text-centered has-background-dark has-text-white-ter" href="mailto: info@spaqva.it"
+      <a class="image text has-text-centered has-background-dark has-text-white-ter" href="mailto:info@spaqva.it">
 
-        target="_blank">
-
-        <p class="is-size-1"><i class="fas fa-at"></i></p>
+        <p class="is-size-1"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z"/></svg></p>
 
         <p>&nbsp;</p>
 
@@ -1422,9 +732,9 @@
 
       <a class="image text has-text-centered has-background-dark has-text-white-ter"
 
-        href="https://www.instagram.com/spaqva" target="_blank">
+        href="https://www.instagram.com/spaqva" target="_blank" rel="noopener noreferrer">
 
-        <p class="is-size-1"><i class="fab fa-instagram"></i></p>
+        <p class="is-size-1"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></p>
 
         <p>&nbsp;</p>
 
@@ -1434,9 +744,9 @@
 
       <a class="image text has-text-centered has-background-dark has-text-white-ter"
 
-        href="https://www.pinterest.com/spaqva" target="_blank">
+        href="https://www.pinterest.com/spaqva" target="_blank" rel="noopener noreferrer">
 
-        <p class="is-size-1"><i class="fab fa-pinterest"></i></p>
+        <p class="is-size-1"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 496 512"><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg></p>
 
         <p>&nbsp;</p>
 
@@ -1446,9 +756,9 @@
 
       <a class="image text has-text-centered has-background-dark has-text-white-ter"
 
-        href="https://www.twitter.com/InfoSpaqva" target="_blank">
+        href="https://www.twitter.com/InfoSpaqva" target="_blank" rel="noopener noreferrer">
 
-        <p class="is-size-1"><i class="fab fa-twitter"></i></p>
+        <p class="is-size-1"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></p>
 
         <p>&nbsp;</p>
 
@@ -1461,6 +771,35 @@
   </div>
 
 
+
+
+  <script>
+    var lastFocus = null;
+
+    function openOverlay(btn) {
+      var img = btn.querySelector('img');
+      var zoom = document.getElementById('overlay-image');
+      zoom.src = img.src.replace('-800.', '-1600.');
+      zoom.alt = img.alt;
+      lastFocus = btn;
+      document.getElementById('overlay').classList.add('open');
+      document.getElementById('overlay-close').focus();
+    }
+
+    function closeOverlay() {
+      var overlay = document.getElementById('overlay');
+      if (!overlay.classList.contains('open')) { return; }
+      overlay.classList.remove('open');
+      var zoom = document.getElementById('overlay-image');
+      zoom.removeAttribute('src');
+      zoom.alt = '';
+      if (lastFocus) { lastFocus.focus(); lastFocus = null; }
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { closeOverlay(); }
+    });
+  </script>
 
 </body>
 

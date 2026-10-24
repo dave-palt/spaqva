@@ -1,6 +1,8 @@
 # spaqva.it — GitHub Pages publish set (explicit whitelist)
 # Everything else on disk is the local safety copy of the Aruba hosting
 # and is intentionally NOT published. Nothing is deleted; just not shipped.
+#
+# NOTE: FontAwesome is no longer shipped — icons are inline SVG in the HTML.
 
 # ignore everything by default
 /*
@@ -14,15 +16,10 @@
 /pages/*
 !/pages/items-pricings.html
 
-# styles
+# styles + favicon
 !/bulma.min.css
-
-# vendored FontAwesome 5.15.4 free kit (replaces https://kit.fontawesome.com/2345759d2b.js)
-!/fontawesome/
-!/fontawesome/css/
-!/fontawesome/css/*.css
-!/fontawesome/webfonts/
-!/fontawesome/webfonts/*
+!/spaqva.css
+!/favicon.png
 
 # root images (referenced)
 !/logo.png
@@ -36,6 +33,12 @@
 # gallery — only the optimized WebP variants actually referenced
 !/images/
 /images/*
+
+# hero + srcset variant
+!/images/20200504_IMG_8471_developed.webp
+!/images/20200504_IMG_8471_developed-800.webp
+
+# catalog 800px (includes SUVA: referenced by a commented-out block)
 !/images/20200223-DSC05202-YATE-800.webp
 !/images/20200223-DSC05203-TUMAY-800.webp
 !/images/20200223-DSC05204-ANGA-800.webp
@@ -46,7 +49,19 @@
 !/images/20200223-DSC05211-LEKA-800.webp
 !/images/20200417-DSC05567-SUVA-800.webp
 !/images/20200417-DSC05569-APIA-800.webp
-!/images/20200504_IMG_8471_developed.webp
+
+# catalog 1600px (product zoom overlay)
+!/images/20200223-DSC05202-YATE-1600.webp
+!/images/20200223-DSC05203-TUMAY-1600.webp
+!/images/20200223-DSC05204-ANGA-1600.webp
+!/images/20200223-DSC05206-FANIA-LUX-1600.webp
+!/images/20200223-DSC05207-CCROSS-1600.webp
+!/images/20200223-DSC05209-RUHA-1600.webp
+!/images/20200223-DSC05210-KALE-1600.webp
+!/images/20200223-DSC05211-LEKA-1600.webp
+!/images/20200417-DSC05569-APIA-1600.webp
+
+# gallery content
 !/images/20200504_IMG_8498_developed_edit_square.webp
 !/images/20200504_IMG_8538_developed.webp
 !/images/20200504_IMG_8542_developed.webp
